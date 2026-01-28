@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="quiz-header">
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div id="timer">30s</div>
+        </div>
+        <div id="question-container">
+            <h2 id="question">Question text</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <div class="modal-container" id="result-modal">
+        <div class="modal">
+            <h2>Quiz Result</h2>
+            <div id="score-container">
+                <p>Your Score: <span id="score">0</span></p>
+                <div id="star-rating"></div>
+            </div>
+            <div id="leaderboard">
+                <h3>Leaderboard</h3>
+                <ol id="leaderboard-list"></ol>
+            </div>
+            <button id="restart-btn" class="btn">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
